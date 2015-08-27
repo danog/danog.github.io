@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /lolololol.htm
+Disallow: /it/lolololol.htm
+Disallow: /ru/lolololol.htm
+Disallow: /errors/*
+Disallow: /it/index_htm_files
+Disallow: /ru/index_htm_files
+
