@@ -13,6 +13,22 @@
      <ror:resourceOf>sitemap</ror:resourceOf>
 </item>
 <item>
+     <link>http://daniil.it/php-login-freelancer/</link>
+     <title>Php-login-freelancer by danog</title>
+     <description>Php-login-freelancer by danog</description>
+     <ror:updatePeriod>weekly</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://daniil.it/gigaclone/</link>
+     <title>Gigaclone by danog</title>
+     <description>Gigaclone by danog</description>
+     <ror:updatePeriod>weekly</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
      <link>http://daniil.it/learn-bash/</link>
      <title>Learn-bash</title>
      <description>Programs to download videos from virtually any website.</description>
