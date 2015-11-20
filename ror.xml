@@ -13,11 +13,27 @@
      <ror:resourceOf>sitemap</ror:resourceOf>
 </item>
 <item>
-     <link>http://daniil.it/video-dl/</link>
-     <title>Video-dl by danog</title>
-     <description>Video-dl by danog</description>
+     <link>http://daniil.it/learn-bash/</link>
+     <title>Learn-bash</title>
+     <description>Programs to download videos from virtually any website.</description>
      <ror:updatePeriod>weekly</ror:updatePeriod>
      <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://daniil.it/video-dl/</link>
+     <title>Video-dl</title>
+     <description>Programs to download videos from virtually any website.</description>
+     <ror:updatePeriod>weekly</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://daniil.it/video-dl/it.html</link>
+     <title>Video-dl</title>
+     <description>Programs to download videos from virtually any website.</description>
+     <ror:updatePeriod>weekly</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
      <ror:resourceOf>sitemap</ror:resourceOf>
 </item>
 </channel>
