@@ -40,7 +40,7 @@ $(function() {
                         $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                             .append("</button>");
                         $('#success > .alert-success')
-                            .append("<strong>Il messaggio &egrave; stato inviato. </strong>");
+                            .append("<strong>The message has been sent. </strong>");
                         $('#success > .alert-success')
                             .append('</div>');
                         //clear all fields
@@ -50,7 +50,7 @@ $(function() {
                         $('#success').html("<div class='alert alert-danger'>");
                         $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                             .append("</button>");
-                        $('#success > .alert-danger').append("<strong>Scusa " + firstName + ", sembra che ci sia stato un errore. Prego riprova pi&ugrave; tardi!");
+                        $('#success > .alert-danger').append("<strong>Sorry " + firstName + ", it looks like an error occurred. Please try again later!</strong>");
                         $('#success > .alert-danger').append('</div>');
                         //clear all fields
                         $('#contactForm').trigger("reset");
@@ -62,7 +62,7 @@ $(function() {
                     $('#success').html("<div class='alert alert-danger'>");
                     $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                         .append("</button>");
-                    $('#success > .alert-danger').append("<strong>Scusa " + firstName + ", sembra che ci sia stato un errore. Prego riprova pi&ugrave; tardi!");
+                    $('#success > .alert-danger').append("<strong>Sorry " + firstName + ", it looks like an error occurred. Please try again later!</strong>");
                     $('#success > .alert-danger').append('</div>');
                     //clear all fields
                     $('#contactForm').trigger("reset");
