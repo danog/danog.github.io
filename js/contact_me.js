@@ -1,6 +1,6 @@
 $(function() {
 
-    $("input,textarea").jqBootstrapValidation({
+    $("#contactForm input,#contactForm textarea").jqBootstrapValidation({
         preventSubmit: true,
         submitError: function($form, event, errors) {
             // additional error messages or events
@@ -9,7 +9,7 @@ $(function() {
             // Prevent spam click and default submit behaviour
             $("#btnSubmit").attr("disabled", true);
             event.preventDefault();
-            
+
             // get values from FORM
             var name = $("input#name").val();
             var email = $("input#email").val();
@@ -30,9 +30,10 @@ $(function() {
                     email: email,
                     message: message,
                     domain: domain
-
                 },
                 cache: false,
+                success: function(data) {
+                    $("#btnSubmit").attr("disabled", false);
                     if(data == "ok") {
                         // Success message
                         $('#success').html("<div class='alert alert-success'>");
@@ -56,6 +57,7 @@ $(function() {
                     }
                 },
                 error: function() {
+                    $("#btnSubmit").attr("disabled", false);
                     // Fail message
                     $('#success').html("<div class='alert alert-danger'>");
                     $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
