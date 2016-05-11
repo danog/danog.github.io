@@ -41,7 +41,7 @@ $(function() {
                 } else {
                     outhtml = outhtml + '<p><strong>Repos List:</strong></p> <ul>';
                     $.each(repositories, function(index) {
-                        if (repositories[index].fork === false && (repositories[index].name != "video-dl" && repositories[index].name != "gigaclone" && repositories[index].name != "php-login-freelancer" && repositories[index].name != "binwalker" &&repositories[index].name != "dl2cloud" && repositories[index].name != "learn-bash" && repositories[index].name != "aura-camera")) {
+                        if (repositories[index].fork === false && (repositories[index].name != "video-dl" && repositories[index].name != "gigaclone" && repositories[index].name != "php-login-freelancer" && repositories[index].name != "learn-bash" && repositories[index].name != "aura-camera")) {
                             outhtml = outhtml + '<li><a href="https://daniil.it/' + repositories[index].name + '" target="_blank">' + repositories[index].name + ' - ' + repositories[index].description + '</a></li>';
                         }
                     });
