@@ -53,7 +53,7 @@ if [ -f ../PrimeModule-ext/ ]; then
 fi
 
 
-git clone https://github.com/CopernicaMarketingSoftware/PrimeModule-ext ../PrimeModule-ext
+git clone https://github.com/danog/PrimeModule-ext ../PrimeModule-ext
 cd ../PrimeModule-ext
 make -j16
 make install
