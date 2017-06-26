@@ -1,19 +1,19 @@
-# If you add some configuration command, add the dependancies here
+# If you add some configuration command, add the dependencies here
 apt-get update
 apt-get -y dist-upgrade
-apt-get install -y libicu-dev libmcrypt-dev libssl-dev libcurl4-openssl-dev libbz2-dev libxml2-dev libpng-dev libjpeg-dev libedit-dev libgmp-dev openssl bc libbison-dev bison build-essential git-core vim curl pkg-config libgmp-dev autoconf
+apt-get install -y libicu-dev libmcrypt-dev libssl-dev libcurl4-openssl-dev libbz2-dev libxml2-dev libpng-dev libjpeg-dev libedit-dev libgmp-dev openssl bc libbison-dev bison build-essential git-core vim curl pkg-config libgmp-dev autoconf libopus-dev
 
-if [ -f php-script-stuff/ ]; then
+if [ -d php-script-stuff/ ]; then
     rm -rf php-script-stuff
 fi
 mkdir php-script-stuff
 cd php-script-stuff
-if [ -f php-src/ ]; then
+if [ -d php-src/ ]; then
     rm -rf php-src/
 fi
 git clone https://github.com/php/php-src.git php-src
 cd php-src
-git checkout PHP-7.1.5
+git checkout PHP-7.1.7
 
 ./buildconf --force
 
@@ -28,7 +28,7 @@ make -j 16
 make install
 cp -a /etc/php7ts/* /usr/
 
-if [ -f ../pthreads/ ]; then
+if [ -d ../pthreads/ ]; then
     rm -rf ../pthreads
 fi
 git clone https://github.com/SirSnyder/pthreads -b feature/nested_volatiles ../pthreads
@@ -38,7 +38,7 @@ phpize
 make -j16
 make install
 
-if [ -f ../PHP-CPP/ ]; then
+if [ -d ../PHP-CPP/ ]; then
     rm -rf ../PHP-CPP
 fi
 
@@ -48,13 +48,18 @@ make -j16
 make install
 
 
-if [ -f ../PrimeModule-ext/ ]; then
+if [ -d ../PrimeModule-ext/ ]; then
     rm -rf ../PrimeModule-ext
 fi
 
 
 git clone https://github.com/danog/PrimeModule-ext ../PrimeModule-ext
 cd ../PrimeModule-ext
+make -j16
+make install
+
+git clone --recursive https://github.com/danog/php-libtgvoip ../php-libtgvoip
+cd ../php-libtgvoip
 make -j16
 make install
 
