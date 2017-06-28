@@ -75,7 +75,7 @@ PHP_VERSION=$(php-config --phpapi)
 
 wget $LUA_GET_URL $PHP_LUA_DOWNLOAD_URL http://daniil.it/config.m4 http://daniil.it/config_x64.path
 tar -xf lua-${LUA_VERSION}.tar.gz
-tar -xf lua-2.0.2.tgz
+tar -xf lua-2.0.3.tgz
 
 cd lua-${LUA_VERSION}
 sed -i 's/CFLAGS= -O2/CFLAGS= -fPIC -O2/g' src/Makefile
@@ -84,11 +84,11 @@ make linux install
 
 patch -p1 config.m4 -i config_x64.path
 
-cd ../lua-2.0.2
+cd ../lua-2.0.3
 cp ../config.m4 .
 phpize
 ./configure
-sed -i "s/INCLUDES =/INCLUDES = -I\/tmp\/phplua\/lua-${LUA_VERSION}\/src/g" /tmp/phplua/lua-2.0.2/Makefile
+sed -i "s/INCLUDES =/INCLUDES = -I\/tmp\/phplua\/lua-${LUA_VERSION}\/src/g" Makefile
 make
 make install
 
