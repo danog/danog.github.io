@@ -29,6 +29,8 @@ make -j 16
 make install
 cp -a /etc/php7ts/* /usr/
 
+[ ! -d $PHP_DIRECTORY/conf.d ] && mkdir $PHP_DIRECTORY/conf.d
+
 if [ -d ../pthreads/ ]; then
     rm -rf ../pthreads
 fi
