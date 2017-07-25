@@ -2,7 +2,7 @@
 # If you add some configuration command, add the dependencies here
 apt-get update
 apt-get -y dist-upgrade
-apt-get install -y libicu-dev libmcrypt-dev libssl-dev libcurl4-openssl-dev libbz2-dev libxml2-dev libpng-dev libjpeg-dev libedit-dev libgmp-dev openssl bc libbison-dev bison build-essential git-core vim curl pkg-config libgmp-dev autoconf libopus-dev libreadline-dev libncurses5-dev
+apt-get install -y binutils-dev libicu-dev libmcrypt-dev libssl-dev libcurl4-openssl-dev libbz2-dev libxml2-dev libpng-dev libjpeg-dev libedit-dev libgmp-dev openssl bc libbison-dev bison build-essential git-core vim curl pkg-config libgmp-dev autoconf libopus-dev libreadline-dev libncurses5-dev
 
 if [ -d php-script-stuff/ ]; then
     rm -rf php-script-stuff
