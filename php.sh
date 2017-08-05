@@ -38,7 +38,7 @@ git clone https://github.com/SirSnyder/pthreads -b feature/nested_volatiles ../p
 cd ../pthreads
 phpize
 ./configure --with-php-config=$PHP_DIRECTORY/bin/php-config
-make -j16
+make -j$(nproc)
 make install
 
 if [ -d ../PHP-CPP/ ]; then
@@ -47,7 +47,7 @@ fi
 
 git clone https://github.com/CopernicaMarketingSoftware/PHP-CPP ../PHP-CPP
 cd ../PHP-CPP
-make -j16
+make -j$(nproc)
 make install
 
 
@@ -58,17 +58,17 @@ fi
 
 git clone https://github.com/danog/PrimeModule-ext ../PrimeModule-ext
 cd ../PrimeModule-ext
-make -j16
+make -j$(nproc)
 make install
 
 git clone https://github.com/openssl/openssl ../openssl
 cd ../openssl
 git checkout OpenSSL_1_0_2-stable
-CFLAGS=-fPIC ./config shared --prefix=/usr/local/ssl && make -j16 all && make install_sw
+CFLAGS=-fPIC ./config shared --prefix=/usr/local/ssl && make -j$(nproc) all && make install_sw
 
 git clone --recursive https://github.com/danog/php-libtgvoip ../php-libtgvoip
 cd ../php-libtgvoip
-make -j16
+make -j$(nproc)
 make install
 
 cd ..
