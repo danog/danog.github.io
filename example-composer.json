@@ -1,0 +1,31 @@
+{
+    // modify this
+    "name": "yourname/yourproject",
+    "description": "Project description",
+    "license": "AGPLv3",
+    "authors": [
+        {
+            "name": "Daniil Gentili",
+            "email": "daniil.gentili.dg@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "yourname\\YourProject\\": "src/"
+        }
+    }
+
+
+    // DO NOT TOUCH THIS
+    "type": "project",
+    "require": {
+        "danog/madelineproto": "dev-master"
+    },
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/danog/phpseclib"
+        }
+    ],
+    "minimum-stability": "dev",
+}
