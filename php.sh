@@ -14,7 +14,7 @@ if [ -d php-src/ ]; then
 fi
 git clone https://github.com/php/php-src.git php-src
 cd php-src
-git checkout PHP-7.1.7
+git checkout PHP-7.2
 
 ./buildconf --force
 
