@@ -3,7 +3,7 @@
 apt-get update
 apt-get -y dist-upgrade
 apt-get install -y binutils-dev libicu-dev libmcrypt-dev libssl-dev libcurl4-openssl-dev libbz2-dev libxml2-dev libpng-dev libjpeg-dev libedit-dev libgmp-dev openssl bc libbison-dev bison build-essential git-core vim curl pkg-config libgmp-dev autoconf libopus-dev libreadline-dev libncurses5-dev
-
+apt-get purge -y 'php*'
 if [ -d php-script-stuff/ ]; then
     rm -rf php-script-stuff
 fi
