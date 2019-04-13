@@ -1,39 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-<url>
-  <loc>http://daniil.it/</loc>
-  <lastmod>2015-11-20T11:00:35+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://daniil.it/php-login-freelancer/</loc>
-  <lastmod>2015-11-01T09:06:34+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://daniil.it/gigaclone/</loc>
-  <lastmod>2015-11-04T21:00:26+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://daniil.it/learn-bash/</loc>
-  <lastmod>2015-11-01T18:53:20+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://daniil.it/video-dl/</loc>
-  <lastmod>2015-11-20T04:06:17+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://daniil.it/video-dl/it.html</loc>
-  <lastmod>2015-11-20T04:06:17+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-</url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://daniil.it/</loc>
+        <lastmod>2019-04-13T09:55:54.267Z</lastmod>
+    </url>
 </urlset>
