@@ -1,1 +1,0 @@
-dpg() { echo "$1" | grep -q 7 && echo "Voglio morire" || echo "pony"; };
