@@ -2,5 +2,5 @@
 
 This is my website's repo.
 
-Feel free to contribute.
+Don't even try to contribute.
 
