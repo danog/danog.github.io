@@ -1,0 +1,3 @@
+User-agent: *
+Allow: *
+Sitemap: https://daniil.it//sitemap.xml
